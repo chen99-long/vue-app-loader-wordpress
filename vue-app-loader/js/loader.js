@@ -1,5 +1,5 @@
-async function appendFunction(cdnBaseUrl) {
-    const cdnUrl = `${cdnBaseUrl}index.html`;
+async function appendFunction(cdnBaseUrl,version) {
+    const cdnUrl = `${cdnBaseUrl}index.html${version ? `?v=${version}` : ''}`;
     
     try {
         const response = await fetch(cdnUrl);
@@ -41,5 +41,5 @@ async function appendFunction(cdnBaseUrl) {
 
 // 当文档加载完成后执行
 document.addEventListener('DOMContentLoaded', function() {
-    appendFunction(vueAppLoader.cdnUrl);
+    appendFunction(vueAppLoader.cdnUrl,vueAppLoader.version);
 }); 

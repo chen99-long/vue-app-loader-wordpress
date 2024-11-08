@@ -2,7 +2,7 @@
 /*
 Plugin Name: Vue App Loader
 Description: 通过短代码加载远程Vue应用
-Version: 1.0
+Version: 1.1
 Author: CHENLONG
 
 /*
@@ -20,12 +20,13 @@ function vue_app_loader_shortcode($atts) {
     // 获取属性，设置默认值
     $atts = shortcode_atts(array(
         'cdn' => 'https://cdn.vimego.io/ai_tools/video-denoise/ai_tools/Writer/',
-        'width' => '100%',         // 添加宽度属性
-        'height' => 'auto',        // 添加高度属性
-        'margin' => '0',           // 添加边距属性
-        'padding' => '0',          // 添加内边距属性
-        'class' => '',             // 添加自定义类名属性
-        'style' => ''              // 添加自定义样式属性
+        'version' => '',              // 添加版本号属性
+        'width' => '100%',            // 添加宽度属性
+        'height' => 'auto',           // 添加高度属性
+        'margin' => '0',              // 添加边距属性
+        'padding' => '0',             // 添加内边距属性
+        'class' => '',                // 添加自定义类名属性
+        'style' => ''                 // 添加自定义样式属性
     ), $atts);
 
     // 加载必要的JS
