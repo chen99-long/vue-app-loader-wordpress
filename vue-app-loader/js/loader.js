@@ -20,6 +20,7 @@ async function appendFunction(cdnBaseUrl,version) {
             const link = document.createElement('link');
             link.rel = 'stylesheet';
             link.href = href;
+            link.setAttribute('crossorigin', true);
             document.head.appendChild(link);
         });
         

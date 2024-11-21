@@ -2,7 +2,7 @@
 /*
 Plugin Name: Vue App Loader
 Description: 通过短代码加载远程Vue应用
-Version: 1.1
+Version: 1.3
 Author: CHENLONG
 
 /*
